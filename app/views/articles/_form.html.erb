@@ -1,0 +1,19 @@
+<div class="container w-50 d-flex">
+  <%= form_with model: article do |f| %>
+    <div class="w-100 flex-grow-1">
+      <%= f.label :title, { class: "form-label"} %>
+    </div>
+    <div class="mb-3 flex-grow-1">
+      <%= f.text_field :title, { class: "form-input"} %>
+    </div>
+    <div class=" flex-grow-1">
+      <%= f.label :content, { class: "form-label"}  %>
+    </div>
+    <div class="mb-3 flex-grow-1">
+      <%= f.text_field :content, { class: "form-input"} %>
+    </div>
+    <div class="mb-3 flex-grow-1">
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>
